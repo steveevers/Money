@@ -64,15 +64,15 @@ namespace Types
             switch (this.Currency.DecimalPlaces)
             {
                 case 0:
-                    return this.Currency.Symbol + this.Amount.ToString() + this.Currency.Code.ToString();
+                    return this.Currency.Symbol + this.Amount.ToString() + " " + this.Currency.Code.ToString();
                 case 1:
-                    return this.Currency.Symbol + this.Amount.ToString("0.0") + this.Currency.Code.ToString();
+                    return this.Currency.Symbol + this.Amount.ToString("0.0") + " " + this.Currency.Code.ToString();
                 case 2:
-                    return this.Currency.Symbol + this.Amount.ToString("0.00") + this.Currency.Code.ToString();
+                    return this.Currency.Symbol + this.Amount.ToString("0.00") + " " + this.Currency.Code.ToString();
                 case 3:
-                    return this.Currency.Symbol + this.Amount.ToString("0.000") + this.Currency.Code.ToString();
+                    return this.Currency.Symbol + this.Amount.ToString("0.000") + " " + this.Currency.Code.ToString();
                 case 4:
-                    return this.Currency.Symbol + this.Amount.ToString("0.0000") + this.Currency.Code.ToString();
+                    return this.Currency.Symbol + this.Amount.ToString("0.0000") + " " + this.Currency.Code.ToString();
                 default:
                     throw new NotSupportedException("Unsupported decimal places");
             }
