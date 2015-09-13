@@ -152,6 +152,26 @@ namespace Types
             return new Money(left.Amount / right, left.Currency);
         }
 
+        public static bool operator <(Money left, Money right) 
+        {
+            return left.Amount.CompareTo(right.Amount) < 0;
+        }
+
+        public static bool operator <=(Money left, Money right) 
+        {
+            return left.Amount.CompareTo(right.Amount) <= 0;
+        }
+
+        public static bool operator >(Money left, Money right) 
+        {
+            return left.Amount.CompareTo(right.Amount) > 0;
+        }
+
+        public static bool operator >=(Money left, Money right) 
+        {
+            return left.Amount.CompareTo(right.Amount) >= 0;
+        }
+
         #endregion
 
         #region Equality
