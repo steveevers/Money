@@ -13,12 +13,18 @@ namespace Types
     {
 
         #region Constructors
-
+        
         public Money(decimal amount) : this(amount, Currency.FromCurrentCulture()) { }
         public Money(double amount) : this(amount, Currency.FromCurrentCulture()) { }
         public Money(float amount) : this(amount, Currency.FromCurrentCulture()) { }
         public Money(int amount) : this(amount, Currency.FromCurrentCulture()) { }
         public Money(long amount) : this(amount, Currency.FromCurrentCulture()) { }
+
+        public Money(decimal amount, CurrencyCode code) : this(amount, Currency.FromCurrencyCode(code)) { }
+        public Money(double amount, CurrencyCode code) : this(amount, Currency.FromCurrencyCode(code)) { }
+        public Money(float amount, CurrencyCode code) : this(amount, Currency.FromCurrencyCode(code)) { }
+        public Money(int amount, CurrencyCode code) : this(amount, Currency.FromCurrencyCode(code)) { }
+        public Money(long amount, CurrencyCode code) : this(amount, Currency.FromCurrencyCode(code)) { }
 
         public Money(double amount, Currency currency) : this((decimal)amount, currency) { }
         public Money(float amount, Currency currency) : this((decimal)amount, currency) { }
@@ -34,6 +40,34 @@ namespace Types
         {
             this.Amount = money.Amount;
             this.Currency = money.Currency;
+        }
+
+        #endregion
+
+        #region Static Constructors
+
+        public static Money Zero() {
+            return new Money(0);
+        }
+
+        public static Money Zero(CurrencyCode code) {
+            return new Money(0, code);
+        }
+
+        public static Money Zero(Currency currency) {
+            return new Money(0, currency);
+        }
+
+        public static Money One() {
+            return new Money(1);
+        }
+
+        public static Money One(CurrencyCode code) {
+            return new Money(1, code);
+        }
+
+        public static Money One(Currency currency) {
+            return new Money(1, currency);
         }
 
         #endregion
