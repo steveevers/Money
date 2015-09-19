@@ -19,8 +19,10 @@ Money usd = 100M;
 // ... or
 Money m = new Money(100, Currency.FromCurrentCulture());
 // ... or
+Money m = new Money(100, CurrencyCode.USD);
+// ... or
 Money m = new Money(100, Currency.FromCulture(CultureInfo.GetCulture("en-US"));
-
+// ... or one of the other constructors or factory methods
 ```
 
 #### 2. Manipulate It
