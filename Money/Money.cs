@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Types
+namespace SE.Money
 {
     /// <summary>
     /// Represents a denomination of money in a currency
