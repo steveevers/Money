@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Types
+namespace SE.Money
 {
     /// <summary>
     /// ISO 4217 Currency Codes

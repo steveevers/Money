@@ -3,7 +3,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Types
+namespace SE.Money
 {
     /// <summary>
     /// An implementation of an ICurrencyConverter that uses data from openexchangerates.org

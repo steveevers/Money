@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Types
+namespace SE.Money
 {
     /// <summary>
     /// Provides an interface for converting Money values between currencies

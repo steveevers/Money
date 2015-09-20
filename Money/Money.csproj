@@ -7,8 +7,8 @@
     <ProjectGuid>{4DE75223-602A-4087-B3B5-B860F233D6A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Types</RootNamespace>
-    <AssemblyName>Types</AssemblyName>
+    <RootNamespace>SE.Money</RootNamespace>
+    <AssemblyName>SE.Money</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
